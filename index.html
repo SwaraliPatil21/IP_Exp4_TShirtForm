@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirt Form</title>
+	<script src="app.js"></script>
+</head>
+<style>
+	body {
+	  background-color: #f593ab;
+	}
+</style>
+<body>
+<fieldset>  
+    <legend align="center"><b><h1>Customized T-shirt Order</b></h1></legend>
+	
+    <div>
+        <form action="" name="myForm" style="margin: 0px 30%;border: 1px pink;padding:30px;border-radius: 30px;background-color: rgb(250, 219, 227);">
+            <br><br>
+			<div>
+				<label for="type">Choose the type of neck:</label><br>
+				<input type="radio" name="type" value="Round" cols="5">
+				<label for="round">Round Neck</label><br>
+				<input type="radio" name="type" value="Polo" cols="22">
+				<label for="polo">Polo Neck</label><br>
+				<input type="radio" name="type" value="V" cols="22">
+				<label for="v">V Neck</label><br><br>
+			</div>
+			
+			<div>
+			<label for="size">Choose size:</label><br>
+			<select name="size" id="size"  required>
+                <option value="extra small">XS</option>
+                <option value="small">S</option>
+                <option value="Medium">M</option>
+                <option value="Large">L</option>
+                <option value="extra large">XL</option>
+                <option value="extra extra large">XXL</option>
+            </select>
+            <br><br>
+			</div>
+			
+			<div>
+			<label for="favcolor">Choose the Colour:</label>
+            <input type="color" id="color" name="color" value="#ff0000"><br><br>
+			</div>
+			
+			<div>
+			<label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1"  required><br><br>
+			</div>
+			
+			<div>
+			<label> Any Special Requests:</label><br>
+            <input type="text" id="tagline" name="tagline"  required><br><br>
+			</div>
+			
+			<div>
+			<label for="datemin">Delivery Date:</label><br>
+            <input type="date" id="date" name="date" min="0000-00-00"  required><br><br>
+			</div>
+			
+			<div>
+			<label for="quantity">Add image file:</label><br>
+            <input type="file" id="files" name="files" multiple><br><br>
+			</div>
+			
+			<div>
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+			</div>
+			
+			<div>
+            <label for="lname">Email:</label><br>
+            <input type="text" id="email" name="email" required><br><br>
+			</div>
+			
+			<div>
+            <label>Shipping Address:</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+			</div>
+            
+			
+			<button type="reset" style=" margin-left: 80px;">RESET NOW</button> 
+			<input type="button" value="SUBMIT" onclick="validateForm();" style="margin-top:30px ; margin-left: 80px;"></input>
+			
+        </form>
+	</div>
+</fieldset>
+</body>
+</html>
